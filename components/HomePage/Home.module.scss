@@ -17,7 +17,7 @@
         height: 50vh;
     }
     @include phone {
-        height: 75vh;
+        height: 80vh;
     }
     @include medium-screen {
         height: 55vh;
@@ -59,7 +59,7 @@
         line-height: 70px;
 
         @include phone {
-            font-size: 36px;
+            font-size: 30px;
             line-height: 55px;
         }
         @media screen and (device-aspect-ratio: 40/71) {
