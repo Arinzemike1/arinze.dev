@@ -20,7 +20,7 @@ const HomePage = () => {
                 <Sidebar isOpen={isOpen} toggleIsOpen={toggleIsOpen} />
 
                 <div className={Style.headlineText}>
-                    <h2>Hi, I am Arinze Ihemedu, Front-end engineer.</h2>
+                    <h2>{ "Hi, I'm Arinze Ihemedu, Front-end engineer." }</h2>
                     <span>Based in Lagos, Nigeria.</span>
 
                     <div className="mt-5">  
