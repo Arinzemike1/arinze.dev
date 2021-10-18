@@ -4,7 +4,6 @@ import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/index';
 import Image from 'next/image';
 import SidePic from '../../public/sidepic.jpg';
-import Link from 'next/link';
 
 const HomePage = () => {
 
@@ -21,7 +20,7 @@ const HomePage = () => {
                 <Sidebar isOpen={isOpen} toggleIsOpen={toggleIsOpen} />
 
                 <div className={Style.headlineText}>
-                    <h2>Hi, I'm Arinze Ihemedu, Front-end engineer.</h2>
+                    <h2>Hi, I am Arinze Ihemedu, Front-end engineer.</h2>
                     <span>Based in Lagos, Nigeria.</span>
 
                     <div className="mt-5">  
@@ -34,7 +33,7 @@ const HomePage = () => {
                 <div className={"container " + Style.aboutSection}>
                     <div className="row">
                         <div className={"col-lg-5 " + Style.aboutImage}>
-                            <Image src={SidePic} width={800} height={860}  />
+                            <Image src={SidePic} width={800} height={860} alt="Portrait picture"  />
                         </div>
                         <div className={"col-lg-7 " + Style.aboutText}>
                             <h1>About Me</h1>
