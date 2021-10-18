@@ -1,11 +1,14 @@
-import Header from '../src/components/Header'
+import Header from '../components/Header/Header';
+import Styles from '../styles/index.module.scss'
+import HomePage from '../components/HomePage';
 
 const Home = () => {
+
   return (
     <div>
       <Header pageTitle="Home Page" />
-      <main>
-        Portfolio App
+      <main className={Styles.main}>
+        <HomePage />
       </main>
     </div>
   )
