@@ -1,10 +1,25 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import navStyles from './Nav.module.scss';
 import { FaBars, FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 
 const Navbar = ({ toggleIsOpen }) => {
+
+    const [nav, setNav] = useState(false);
+
+    const changeBackground = () => {
+        if (window.scrollY >= 80) {
+            setNav(true);
+        }
+        else {
+            setNav(false);
+        }
+    }
+    if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', changeBackground);
+    }
     return (
-        <nav className={navStyles.navContainer}>
+        <nav className={nav ? `${navStyles.navContainer} ${navStyles.onScroll}` : navStyles.navContainer}>
             <div className={navStyles.logo}>LOGO</div>
 
             <div className={navStyles.mobileIcon} onClick={toggleIsOpen}>
