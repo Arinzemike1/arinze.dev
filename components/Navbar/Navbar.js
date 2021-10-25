@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
+// import Link from 'next/link';
 import navStyles from './Nav.module.scss';
 import { FaBars, FaFacebookF, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 
@@ -15,44 +16,104 @@ const Navbar = ({ toggleIsOpen }) => {
             setNav(false);
         }
     }
-    if (typeof window !== 'undefined') {
-        window.addEventListener('scroll', changeBackground);
-    }
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', changeBackground);
+        }
+    }, [])
+    
     return (
         <nav className={nav ? `${navStyles.navContainer} ${navStyles.onScroll}` : navStyles.navContainer}>
-            <div className={navStyles.logo}>LOGO</div>
+            <div>
+                <Link 
+                    className={navStyles.logo}
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    exact={true}
+                    >
+                    LOGO
+                    </Link>
+            </div>
 
             <div className={navStyles.mobileIcon} onClick={toggleIsOpen}>
                 <FaBars />
             </div>
             <ul className={navStyles.linkWrapper}>
                 <li>
-                    <Link href="/" className={navStyles.navLinks}>
-                        <a>Home</a>
+                    <Link 
+                        className={navStyles.linkWrapper}
+                        activeClass={navStyles.active}
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        exact={true}
+                        offset={-80}
+                    >
+                    Home
                     </Link>
                 </li>
 
                 <li>
-                    <Link href="/about" className={navStyles.navLinks}>
-                        <a>About</a> 
+                    <Link 
+                        className={navStyles.linkWrapper}
+                        activeClass={navStyles.active}
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        exact={true}
+                        offset={-80}
+                    >
+                    About
                     </Link>
                 </li>
 
                 <li>
-                    <Link href="/" className={navStyles.navLinks}>
-                         <a>Projects</a>
+                    <Link 
+                        className={navStyles.linkWrapper}
+                        activeClass={navStyles.active}
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        exact={true}
+                        offset={-80}
+                    >
+                    Projects
                     </Link>
                 </li>
 
                 <li>
-                    <Link href="/" className={navStyles.navLinks}>
-                         <a>Services</a>
+                    <Link 
+                        className={navStyles.linkWrapper}
+                        activeClass={navStyles.active}
+                        to="services"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        exact={true}
+                        offset={-80}
+                    >
+                    Services
                     </Link>
                 </li>
 
                 <li>
-                    <Link href="/" className={navStyles.navLinks}>
-                         <a>Thoughts</a>
+                    <Link 
+                        className={navStyles.linkWrapper}
+                        activeClass={navStyles.active}
+                        to="thoughts"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        exact={true}
+                        offset={-80}
+                    >
+                    Thoughts
                     </Link>
                 </li>
             </ul>

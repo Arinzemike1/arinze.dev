@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 import style from './Sidebar.module.scss';
 import { FaTimes } from 'react-icons/fa';
 
@@ -11,23 +11,59 @@ const SideBar = ({ isOpen, toggleIsOpen }) => {
             <div className={style.sidebarWrapper}>
                 <ul>
                     <li>
-                        <Link href="/about" onClick={toggleIsOpen}>
+                        {/* <Link href="/about" onClick={toggleIsOpen}>
                             <a>About</a>
+                        </Link> */}
+
+                        <Link 
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            exact={true}
+                            offset={-80}
+                            onClick={toggleIsOpen}
+                            >
+                            Home
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about" onClick={toggleIsOpen}>
-                            <a>Projects</a>
+                        <Link 
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            exact={true}
+                            offset={-80}
+                            onClick={toggleIsOpen}
+                            >
+                            About
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about" onClick={toggleIsOpen}>
-                            <a>Contact</a>
+                        <Link 
+                            to="projects"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            exact={true}
+                            offset={-80}
+                            onClick={toggleIsOpen}
+                            >
+                            Projects
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about" onClick={toggleIsOpen}>
-                            <a>Services</a>
+                        <Link 
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            exact={true}
+                            offset={-80}
+                            onClick={toggleIsOpen}
+                            >
+                            Home
                         </Link>
                     </li>
                 </ul>
