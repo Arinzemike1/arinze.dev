@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
 
     @include tablet {
@@ -37,7 +37,7 @@
 }
 .headlineText {
     width: 73%;
-    padding: 200px 145px;
+    padding: 250px 145px;
     color: #fff;
 
     @media screen and (max-width: 768px) {
@@ -53,14 +53,14 @@
     
 
     h2 {
-        font-size: 54px;
+        font-size: 63px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 600 !important;
-        line-height: 70px;
+        line-height: 80px;
 
         @include phone {
             font-size: 30px;
-            line-height: 55px;
+            line-height: 45px;
         }
         @media screen and (device-aspect-ratio: 40/71) {
             font-size: 30px;
@@ -79,7 +79,7 @@
 /*Styles for about section*/
 
 .aboutSection {
-    margin-top: 100px;
+    padding-top: 100px;
 
     @media screen and (max-width: 768px) {
         margin-top: 50px;
@@ -107,7 +107,7 @@
 }
 .ctaBtn {
     border: none;
-    padding: 12px 30px;
+    padding: 12px 50px;
     text-decoration: none;
     color: #000;
     height: 41px;
