@@ -94,7 +94,7 @@ const TabLayout = () => {
                                             <a href="#">BSc In Applied Informatics and Systems programming<span> - Vitebsk State University, Belarus</span></a> 2015 - 2019
                                         </li>
                                         <li>
-                                            <a href="#">Secondary Education<span> - Grundtvig Int'l Secondary School Oba, Anambra</span></a> 2010 - 2015
+                                            <a href="#">Secondary Education<span> - { "Grundtvig Int'l Secondary School Oba, Anambra" }</span></a> 2010 - 2015
                                         </li>
                                     </ul>
                                 </div>
