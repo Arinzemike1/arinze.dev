@@ -75,36 +75,6 @@
     }
 }
 
-
-/*Styles for about section*/
-
-.aboutSection {
-    padding-top: 100px;
-
-    @media screen and (max-width: 768px) {
-        margin-top: 50px;
-    }    
-}
-.aboutImage {
-
-    img {
-        border-radius: 7px;
-    }
-}
-.aboutText {
-    padding: 0 50px;
-
-    h1 {
-        font-size: 53px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600 !important;
-    }
-    p {
-        color: #717173;
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-    }
-}
 .ctaBtn {
     border: none;
     padding: 12px 50px;
@@ -126,5 +96,39 @@
         font-size: 22px;
         width: 256px;
         height: 51px;
+    }
+}
+.img {
+    border-bottom-right-radius: 50px;
+}
+.aboutText {
+    padding: 0 50px;
+
+    h1 {
+        font-size: 53px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600 !important;
+
+        @include phone {
+            font-size: 35px;
+        }
+    }
+    p {
+        color: #97979d;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+
+        @include phone {
+            line-height: 28px;
+        }
+    }
+}
+
+.portfolioSection {
+    h1 {
+        font-size: 53px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600 !important;
+        text-decoration: overline;
     }
 }

@@ -33,6 +33,7 @@ const Navbar = ({ toggleIsOpen }) => {
                     smooth={true}
                     duration={500}
                     exact={true}
+                    offset={-75}
                     >
                     LOGO
                     </Link>
@@ -51,7 +52,7 @@ const Navbar = ({ toggleIsOpen }) => {
                         smooth={true}
                         duration={500}
                         exact={true}
-                        offset={-80}
+                        offset={-75}
                     >
                     Home
                     </Link>
@@ -66,7 +67,7 @@ const Navbar = ({ toggleIsOpen }) => {
                         smooth={true}
                         duration={500}
                         exact={true}
-                        offset={-80}
+                        offset={-75}
                     >
                     About
                     </Link>
@@ -81,7 +82,7 @@ const Navbar = ({ toggleIsOpen }) => {
                         smooth={true}
                         duration={500}
                         exact={true}
-                        offset={-80}
+                        offset={-75}
                     >
                     Projects
                     </Link>
@@ -96,7 +97,7 @@ const Navbar = ({ toggleIsOpen }) => {
                         smooth={true}
                         duration={500}
                         exact={true}
-                        offset={-80}
+                        offset={-75}
                     >
                     Services
                     </Link>
@@ -111,7 +112,7 @@ const Navbar = ({ toggleIsOpen }) => {
                         smooth={true}
                         duration={500}
                         exact={true}
-                        offset={-80}
+                        offset={-75}
                     >
                     Thoughts
                     </Link>
