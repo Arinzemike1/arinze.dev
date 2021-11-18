@@ -11,11 +11,8 @@ const SideBar = ({ isOpen, toggleIsOpen }) => {
             <div className={style.sidebarWrapper}>
                 <ul>
                     <li>
-                        {/* <Link href="/about" onClick={toggleIsOpen}>
-                            <a>About</a>
-                        </Link> */}
-
-                        <Link 
+                        <Link
+                            className={style.linkWrapper} 
                             to="home"
                             spy={true}
                             smooth={true}
@@ -28,7 +25,8 @@ const SideBar = ({ isOpen, toggleIsOpen }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link 
+                        <Link
+                            className={style.linkWrapper} 
                             to="about"
                             spy={true}
                             smooth={true}
@@ -41,7 +39,8 @@ const SideBar = ({ isOpen, toggleIsOpen }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link 
+                        <Link
+                            className={style.linkWrapper} 
                             to="projects"
                             spy={true}
                             smooth={true}
@@ -54,7 +53,8 @@ const SideBar = ({ isOpen, toggleIsOpen }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link 
+                        <Link
+                            className={style.linkWrapper} 
                             to="home"
                             spy={true}
                             smooth={true}
